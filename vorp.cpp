@@ -24,7 +24,7 @@ const float COLOR_BLACK[]   = {0.0f, 0.0f, 0.0f};
 const float COLOR_WHITE[]   = {1.0f, 1.0f, 1.0f};
 const float COLOR_RED[]     = {1.0f, 0.0f, 0.0f};
 const float COLOR_SILVER[]  = {0.8f, 0.8f, 0.9f};
-const float COLOR_DARKGREY[]= {0.3f, 0.3f, 0.3f};
+const float COLOR_LIGHTGREY[] = {0.75f, 0.75f, 0.75f};
 const float COLOR_BLUE[]    = {0.2f, 0.4f, 1.0f};
 const float COLOR_ORANGE[]  = {0.9f, 0.3f, 0.1f};
 
@@ -176,7 +176,7 @@ void drawRocket(Point translate, float angle_deg, float scale){
     scanlineFillPolygon(nose,COLOR_RED);
     scanlineFillPolygon(leftFin,COLOR_RED);
     scanlineFillPolygon(rightFin,COLOR_RED);
-    scanlineFillPolygon(exhaust, COLOR_DARKGREY);
+    scanlineFillPolygon(exhaust, COLOR_LIGHTGREY);
 
     drawFlames(exhaustBase[0], exhaustBase[1], angle_deg, scale);
 }
