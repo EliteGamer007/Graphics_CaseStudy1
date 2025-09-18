@@ -172,12 +172,13 @@ void drawRocket(Point translate, float angle_deg, float scale){
     auto exhaust = transform({{-10,-30},{10,-30},{15,-40},{-15,-40}});
     auto exhaustBase = transform({{-15,-40},{15,-40}});
 
-    drawFlames(exhaustBase[0], exhaustBase[1], angle_deg, scale);
-
     scanlineFillPolygon(body,COLOR_WHITE);
     scanlineFillPolygon(nose,COLOR_RED);
     scanlineFillPolygon(leftFin,COLOR_RED);
     scanlineFillPolygon(rightFin,COLOR_RED);
+    scanlineFillPolygon(exhaust, COLOR_DARKGREY);
+
+    drawFlames(exhaustBase[0], exhaustBase[1], angle_deg, scale);
 }
 
 // PLANETS
