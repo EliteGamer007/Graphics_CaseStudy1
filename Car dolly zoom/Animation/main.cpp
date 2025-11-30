@@ -23,7 +23,7 @@
 const unsigned int SCR_WIDTH = 1280;
 const unsigned int SCR_HEIGHT = 720;
 const int MAX_POINT_LIGHTS = 10;
-const char* CAR_MODEL_PATH = "C:\\Users\\Sanjeev Srinivas\\Desktop\\Graphics\\Case Study 2\\bin\\Debug\\Porshe911CarreraGTS.obj";
+const char* CAR_MODEL_PATH = "bin\\Debug\\Porshe911CarreraGTS.obj";
 const float CAR_SCALE_FACTOR = 1.5f;
 
 // Multi-Light Phong Shader
